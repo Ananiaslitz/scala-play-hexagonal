@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9912:9000"
+    volumes:
+      - .:/app
+      - sbt-cache:/root/.ivy2
+      - sbt-cache:/root/.sbt
+
+volumes:
+  sbt-cache:
