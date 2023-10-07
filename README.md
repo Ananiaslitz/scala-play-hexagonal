@@ -1,0 +1,1 @@
+aplicação usando play framework do Scala. :D
